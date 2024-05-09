@@ -7,6 +7,6 @@ class Avo::Resources::Article < Avo::BaseResource
   def fields
     field :id, as: :id
     field :title, as: :text
-    field :body, as: :trix, always_show: true
+    field :body, as: :trix, always_show: true, html: Avo::TRIX_CUSTOM_HTML
   end
 end
